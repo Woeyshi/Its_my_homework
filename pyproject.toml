@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "sky"
+version = "1.0"
+description = "Awesome"
+authors = ["Woeyshi <zhenek19900101@gmail.com>"]
+license = "None"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.1"
+isort = "^5.13.2"
+black = "^24.4.1"
+flake8 = "^7.0.0"
+mypy = "^1.10.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.1"
+isort = "^5.13.2"
+
+[tool.black]
+line-length = 88
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
