@@ -1,4 +1,4 @@
-from src.masks import mask_credit_card, mask_bank_account
+from src.masks import mask_bank_account, mask_credit_card
 
 card_number = "7000792289606361"
 masked_card = mask_credit_card(card_number)

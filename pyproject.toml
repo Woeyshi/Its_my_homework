@@ -18,8 +18,16 @@ mypy = "^1.10.0"
 black = "^24.4.1"
 isort = "^5.13.2"
 
+[tool.isort]
+profile = "black"
+line_length = 79
+
 [tool.black]
-line-length = 88
+line-length = 79
+
+[tool.mypy]
+python_version = "3.12.1"
+strict = 'True'
 
 [build-system]
 requires = ["poetry-core"]
