@@ -1,19 +1,43 @@
-def mask_card_or_account_number(input_string: str) -> str:
+from datetime import datetime
+
+
+def mask_credit_card(card_number: str) -> str:
     """
-    Masks the card or account number in the given input string.
+    Маскирует указанный номер кредитной карты.
 
     Args:
-        input_string (str): The input string containing the card or account number.
+        card_number (str): Номер кредитной карты, который должен быть замаскирован.
 
     Returns:
-        str: The masked card or account number.
+        str: Замаскированный номер кредитной карты в формате XXXX XX** **** XXXX.
     """
-    if "Счет" in input_string:
-        masked_number = input_string.replace("Счет ", "Счет **").split()[1][-4:]
-    else:
-        card_details = input_string.split()
-        masked_number = (
-            card_details[0] + " " + card_details[1] + " " + card_details[2][:2] + "** **** " + card_details[4]
-        )
-
+    masked_number = card_number[:4] + " " + card_number[4:6] + "** **** " + card_number[-4:]
     return masked_number
+
+
+def mask_bank_account(account_number: str) -> str:
+    """
+    Маскирует указанный номер банковского счета.
+
+    Args:
+        account_number (str): Номер банковского счета, который должен быть замаскирован.
+
+    Returns:
+        str: Замаскированный номер банковского счета в формате **XXXX.
+    """
+    masked_account = "**" + account_number[-4:]
+    return masked_account
+
+
+def convert_date(input_date: str) -> str:
+    """
+    Converts the input date string to the required format.
+
+    Args:
+        input_date (str): The input date string in the format '%Y-%m-%dT%H:%M:%S.%f'.
+
+    Returns:
+        str: The converted date string in the format '%d.%m.%Y'.
+    """
+    date_obj = datetime.strptime(input_date, "%Y-%m-%dT%H:%M:%S.%f")
+    return date_obj.strftime("%d.%m.%Y")
