@@ -1,6 +1,6 @@
 from src.masks import mask_bank_account, mask_credit_card
 
-credit_card_number = "7000792289606361"
+credit_card_number = "Visa Platinum 7000 7922 8960 6361"
 masked_credit_card = mask_credit_card(credit_card_number)
 print(masked_credit_card)
 
