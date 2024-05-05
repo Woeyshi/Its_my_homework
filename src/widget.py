@@ -5,7 +5,7 @@ def masked_cards(card_or_count: str) -> str:
     """
     Функция для отличия и замаскирования номеров карт/счётов
     """
-    card_or_count_split = card_or_count.split("")
+    card_or_count_split = card_or_count.split(" ")
     if card_or_count_split[0] == "Счет":
         return f"{card_or_count_split[0]} {mask_bank_account(card_or_count_split[-1])}"
     else:
