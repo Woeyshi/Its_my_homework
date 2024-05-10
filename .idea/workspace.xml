@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9ec982c-be17-421b-a0b7-694eeb6390f2" name="Changes" comment="pytest tests" />
+    <list default="true" id="d9ec982c-be17-421b-a0b7-694eeb6390f2" name="Changes" comment="pytest tests">
+      <change afterPath="$PROJECT_DIR$/src/generators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_generators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,12 +35,15 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="f124ce20-57a2-4b80-84ff-4cc4ee47705f" />
-        <option name="url" value="https://github.com/Woeyshi/My_homework.git" />
+        <option name="url" value="https://github.com/Woeyshi/Its_my_homework.git" />
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -53,6 +60,8 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Python tests.Python tests in masks_tests.py.executor": "Run",
+    "Python tests.pytest in test_generators.py.executor": "Run",
+    "Python.generators.executor": "Run",
     "Python.masks.executor": "Run",
     "Python.masks_tests.executor": "Run",
     "Python.processing.executor": "Run",
@@ -192,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715122873637</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="pytest tests">
+      <option name="closed" value="true" />
+      <created>1715245089660</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715245089660</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
