@@ -1,0 +1,2 @@
+2024-05-12 16:12:05.539388: test_function_success_file ok
+2024-05-12 16:12:13.769494: test_function_success_file ok
