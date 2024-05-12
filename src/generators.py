@@ -53,7 +53,7 @@ def filter_by_currency(dictionaries: List[Dict[str, Any]], code: str) -> Iterato
     """
     Функция, которая выводит id
     """
-    for i in dictionaries :
+    for i in dictionaries:
         if i["operationAmount"]["currency"]["code"] == code:
             yield i["id"]
 
